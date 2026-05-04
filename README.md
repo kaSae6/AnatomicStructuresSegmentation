@@ -1,16 +1,18 @@
-# [Your Project Title Here]
+# Anatomic structures segmentation with missing labels
 
 ## Repository Link
 
-[https://github.com/your_username/your_project_name]
+https://github.com/kaSae6/AnatomicStructuresSegmentation
 
 ## Description
 
-[Short project description here. Briefly summarize the problem you are trying to solve and the approach you're taking.]
+CT scans provide highly accurate 3D images of the human body (up to 0.5 mm resolution), enabling us to grasp the human anatomy. The aim of this challenge is to automatically segment the anatomical structures of the human body, as well as tumors, on a CT scan. In other words, the aim is to identify the visible shapes on a CT scan which have no exhaustive annotations.
+
+[Short project description here. Briefly summarize the problem you are trying to solve **and the approach you're taking**.]
 
 ### Task Type
 
-[Image Classification / Chatbot / Regression / Clustering / Other]
+Image Classification / Segmentation
 
 ### Results Summary
 
@@ -32,7 +34,7 @@
 
 ## Documentation
 
-1. **[Literature Review](0_LiteratureReview/README.md)**
+1. **[Literature Review](https://github.com/kaSae6/AnatomicStructuresSegmentation/blob/main/0_LiteratureReview/README.md)**
 2. **[Dataset Characteristics](1_DatasetCharacteristics/exploratory_data_analysis.ipynb)**
 3. **[Baseline Model](2_BaselineModel/baseline_model.ipynb)**
 4. **[Model Definition and Evaluation](3_Model/model_definition_evaluation)**
