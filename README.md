@@ -8,7 +8,7 @@ https://github.com/kaSae6/AnatomicStructuresSegmentation
 
 CT scans provide highly accurate 3D images of the human body (up to 0.5 mm resolution), enabling us to grasp the human anatomy. The aim of this challenge is to automatically segment the anatomical structures of the human body, as well as tumors, on a CT scan. In other words, the aim is to identify the visible shapes on a CT scan which have no exhaustive annotations.
 
-[Short project description here. Briefly summarize the problem you are trying to solve **and the approach you're taking**.]
+This project develops a pixel-level multi-organ segmentation model for 256×256 grayscale CT slices from the Raidium 2025 challenge. The dataset contains 2000 annotated training images across 54 organ classes with partial labels (each scan annotates only a subset of organs). We first establish a parameter-free watershed baseline (mean DICE = 0.0006) to confirm the task requires semantic learning, then develop a supervised model trained on a class-balanced subset of the data.
 
 ### Task Type
 
@@ -16,12 +16,10 @@ Image Classification / Segmentation
 
 ### Results Summary
 
-## Results
-
 | Model | Val DICE | Notes |
 |---|---|---|
-| Watershed baseline | ~0.001 | Classical edge-based; balanced subset, 200 val images |
-| U-Net (next step) | TBD | Supervised; ResNet encoder, 256×256, CE + Dice loss |
+| Watershed baseline | 0.0006 | Parameter-free; balanced subset, 200 val images |
+| Supervised model | TBD | To be trained on balanced subset |
 
 ## Lessons Learned So Far
 
@@ -39,12 +37,11 @@ Image Classification / Segmentation
 
 ## Documentation
 
-1. **[Literature Review](https://github.com/kaSae6/AnatomicStructuresSegmentation/blob/main/0_LiteratureReview/README.md)**
-2. **[Dataset Characteristics](1_DatasetCharacteristics/exploratory_data_analysis.ipynb)** — EDA + class imbalance analysis + balanced subset selection
-3. **[Watershed Baseline](notebooks/02_baseline_watershed.ipynb)** — classical baseline with per-class DICE evaluation
-4. **[Raidium Starter (Colab)](2_BaselineModel/raidium_baseline_colab.ipynb)** — U-Net baseline for GPU training on Colab
-5. **[Model Definition and Evaluation](3_Model/model_definition_evaluation)**
-6. **[Presentation](4_Presentation/README.md)**
+1. **[Literature Review](0_LiteratureReview/README.md)** — marginal loss for partial labels; conditional nnU-Net
+2. **[Dataset Characteristics](1_DatasetCharacteristics/exploratory_data_analysis.ipynb)** — EDA, class imbalance analysis, balanced subset selection
+3. **[Baseline Model](2_BaselineModel/baseline_model.ipynb)** — watershed segmentation, per-class DICE evaluation (mean DICE = 0.0006)
+4. **[Model Definition and Evaluation](3_Model/model_definition_evaluation.ipynb)**
+5. **[Presentation](4_Presentation/README.md)**
 
 ## Cover Image
 
