@@ -166,3 +166,8 @@ cython_debug/
 1_DatasetCharacteristics/data
 *.png
 test-images/
+train-images/
+
+# Model checkpoints and large binary artifacts
+*.pt
+*.npy
