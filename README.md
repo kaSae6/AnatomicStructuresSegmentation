@@ -81,4 +81,4 @@ Select kernel **CT Segmentation (uv)** when opening any notebook.
 
 ## Cover Image
 
-![Project Cover Image](CoverImage/cover_image.png)
+![Project Cover Image](CoverImage/cover_image_raidium.png)
