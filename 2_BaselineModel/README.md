@@ -53,5 +53,7 @@ semantic understanding is insufficient — supervised learning is required.
 ## Next steps
 
 This baseline (DICE = 0.0008) is the reference point for
-[Model Definition and Evaluation](../3_Model/README.md).
-Classes 1, 2, 6, 8, 14 are the primary improvement target.
+[Model Definition and Evaluation](../3_Model/README.md). The best supervised
+model (MiT-B2 U-Net, DICE 0.1204) exceeded this baseline by 150×. See
+[3_Model/README.md](../3_Model/README.md). Classes 1, 2, 6, 8, 14 are the
+primary improvement target.
