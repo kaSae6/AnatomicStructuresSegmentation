@@ -1,6 +1,6 @@
 # Raidium Challenge 2025 — CT Scan Organ Segmentation
 
-**Vaishali Vinod · Karolina Saegner · Applied Machine Learning · June 2026**
+**Contributors - Karolina Saegner & Vaishali Vinod**
 
 ## Repository Link
 
